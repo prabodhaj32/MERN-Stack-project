@@ -6,11 +6,11 @@ const userSchema = new mongoose.Schema({
         required: true
     },
     image: {
-        type: String, // Store image URL or base64 string
+        type: String, 
         required: true,
     },
     age: {
-        type: Number, // Age should be a number, not a string
+        type: Number, 
         required: true
     },
     status: {

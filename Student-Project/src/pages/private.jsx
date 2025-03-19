@@ -14,7 +14,7 @@ export const Private = () => {
 
         // Show notification & redirect to Dashboard
         setTimeout(() => {
-          alert("✅ Login successful! Redirecting to Dashboard...");
+          alert("Login successful! Redirecting to Dashboard...");
           navigate("/dashboard");
         }, 1000); // Delay for notification effect
       } else {

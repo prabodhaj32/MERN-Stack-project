@@ -1,13 +1,13 @@
 import React from "react";
 import { signOut } from "firebase/auth";
-import { auth } from "../../firebase"; // Ensure correct path to firebase config
-import { useNavigate, Link } from "react-router-dom"; // Import Link
+import { auth } from "../../firebase"; // E path to firebase config
+import { useNavigate, Link } from "react-router-dom"; 
 
 const NavbarMain = () => {
   const navigate = useNavigate();
-
+  
   const handleSignout = () => {
-    signOut(auth)
+  signOut(auth)
       .then(() => {
         console.log("Signed Out");
         navigate("/"); // Redirect to login page

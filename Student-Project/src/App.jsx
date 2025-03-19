@@ -27,14 +27,14 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* If user is NOT logged in, show Login page */}
+        {/* user is NOT logged in, show Login page  */}
         <Route path="/" element={user ? <Navigate to="/HeroMain" /> : <Login />} />
 
-        {/* Private Route - Only accessible when logged in */}
+       {/* Private Route - Only accessible when logge */}
         <Route path="/HeroMain" element={user ? <Private /> : <Navigate to="/" />} />
       </Routes>
 
-      {/* Show Navbar & HeroMain only if the user is logged in */}
+      {/* Show Navbar & HeroMain only if the user is logged in  */}
       {user && (
         <>
           <NavbarMain />

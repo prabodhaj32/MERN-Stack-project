@@ -30,7 +30,8 @@ const HeroMain = () => {
     fetchData();
   }, []);
 
-  // Handle form submission
+
+  // update form submission
   const submitForm = async (e) => {
     e.preventDefault();
     try {
@@ -51,6 +52,8 @@ const HeroMain = () => {
     }
   };
 
+
+
   // Handle form input changes
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -65,6 +68,10 @@ const HeroMain = () => {
     }
   };
 
+
+
+
+
   // Delete student
   const handleDelete = async (id) => {
     try {
@@ -77,6 +84,12 @@ const HeroMain = () => {
       console.error("Error deleting student:", error);
     }
   };
+
+
+
+
+
+
 
   return (
     <div className="min-h-screen flex flex-col items-center bg-gray-100 p-6">
